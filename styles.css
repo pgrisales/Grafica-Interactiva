@@ -30,6 +30,9 @@ body {
     font-family: Buffon-Regular;
     padding: 10px;
     color: #000000;
+    /*color backgroun con gradiente*/
+    background: linear-gradient(45deg, #dbd8d8, #3d4735);
+
 }
 
 /*Estilo de los titulos */
@@ -38,7 +41,7 @@ h1 {
     font-size: 40px;
     font-style: normal;
     font-weight: bold;
-    color: #5eaf4a;
+    color: #bbff00;
     text-align: center;
     min-width: 200px;
     max-width: 840px;
@@ -51,7 +54,7 @@ h2 {
     font-style: normal;
     font-weight: bold;
     padding-top: 20px;
-    color: #000000;
+    color: #bbff00;
     text-align: center;
 
 }
@@ -111,7 +114,7 @@ h5 {
 .rightcolumn {
     float: right;
     width: 50%;
-    
+
 }
 
 /* Clear floats despues de las columnas */
@@ -137,12 +140,12 @@ h5 {
 .image {
     background-color: #aaa;
     width: 100%;
-    
+
 }
 
 /* Separar cada imagen con su informacion para mejor organizacion */
 .card {
-    background-color: white;
+    background-color: rgb(148, 150, 44);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -152,14 +155,206 @@ h5 {
     margin-right: auto;
 }
 
-/*estilo de los párrafos*/
+/*estilos lista*/
+li a {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(38, 36, 30);
+    font-weight: 600;
+    list-style-type: circle;
+    /*estilo de lista*/
+}
+
+li a:visited {
+    text-decoration: none;
+    color: rgb(94, 91, 73);
+    font-weight: 200;
+    /*grosor de la tipografia*/
+}
+
+/*estilos enlace*/
+.enlace {
+    /*enlace en estado normal*/
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(246, 246, 202);
+    font-weight: 600;
+    /*grosor de la letra*/
+    -o-text-stroke: 0.1px rgb(60, 58, 48);
+    /*borde de la letra - opera*/
+    -ms-text-stroke: 0.1px rgb(60, 58, 48);
+    /*borde de la letra - microsoft edge*/
+    -moz-text-stroke: 0.1px rgb(60, 58, 48);
+    /*borde de la letra - mozilla*/
+    -webkit-text-stroke: 0.1px rgb(60, 58, 48);
+    /*borde de la letra - google*/
+    text-shadow: 1px 1px 1px rgb(60, 58, 48);
+    /*sombra en los bordes de la letra*/
+}
+
+.enlace:visited {
+    /*estilo enlace visitado*/
+    text-decoration: none;
+    /*sin subrayado*/
+    color: rgb(113, 111, 95);
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(199, 191, 161);
+    /*sombra en los bordes de la letra*/
+}
+
+a:hover {
+    /*estilo cuando se pasa el cursor sobre el enlace*/
+    text-decoration: none;
+}
+
+.tabla {
+    display: block;
+}
+
+.tabla_responsive {
+    display: none;
+}
+
+/*ocultar tabla no responsive en vista de menos de 800px*/
+.tabla {
+    display: none;
+}
+
+/*mostrar tabla  responsive en vista de menos de 800px*/
+.tabla_responsive {
+    display: block;
+}
+
+/*estilos letra general del sitio*/
 p {
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    min-width: 400px;
-    font-size: 26px;
-    color: #000000;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    /*grosor de la letra*/
+    padding: 15px;
+}
+
+/*estilos para textos, enlaces y titulos seleccionados con el cursor*/
+p::selection {
+    background-color: rgb(123, 123, 102);
+    color: white;
+}
+
+a::selection {
+    background-color: rgb(123, 123, 102);
+    color: white;
+}
+
+h1::selection {
+    background-color: rgb(123, 123, 102);
+    color: white;
+}
+
+h2::selection {
+    background-color: rgb(123, 123, 102);
+    color: white;
+}
+
+h4::selection {
+    background-color: rgb(123, 123, 102);
+    color: white;
+}
+
+/*mapa del sitio*/
+/*estilos contenedor del mapa del sitio*/
+.contenedor_mapa {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    background-color: rgba(94, 91, 73, 0.3);
+    border-radius: 20px;
+    padding: 20px 0px;
+}
+
+/*estilos contenedor encabezado del mapa del sitio*/
+.encabezado {
+    display: flex;
+    flex-flow: row nowrap;
+    /*ubicación horizontal*/
+    justify-content: center;
+}
+
+/*estilos texto del encabezado del mapa del sitio*/
+.caja_encabezado p {
+    background-color: rgba(54, 52, 42, 0.7);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-family: Impact, Haette nschweiler, "Arial Narrow Bold", sans-serif;
+    color: rgb(242, 242, 201);
+    font-weight: 300;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+/*estilos contenedor de la sección de páginas del mapa del sitio*/
+.paginas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /*espacio entre las cajas que representan las paginas del sitio*/
+}
+
+/*estilos de cada una de las cajas que representan las paginas del sitio*/
+.caja {
+    width: auto;
+    padding: 3px;
+}
+
+/*estilos del texto de cada una de las cajas que representan las paginas del sitio*/
+.caja p {
+    text-align: center;
+    background-color: rgba(94, 91, 73, 0.7);
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: rgb(202, 202, 167);
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+/*estilos de las subsecciones de cada una de las paginas del mapa del sitio*/
+.caja li {
+    background-color: rgba(63, 61, 49, 0.7);
+    padding: 10px 20px;
+    border: 1px solid rgb(63, 61, 49);
+    /*borde de las subsecciones */
+    list-style: none;
+    /*remueve los bullet list de las subsecciones*/
+}
+
+/*estilos de los enlaces del mapa del sitio*/
+.caja li a {
+    color: rgb(202, 202, 167);
+    font-weight: lighter;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*estilos de los enlaces ya visitados del mapa del sitio*/
+.caja li a:visited {
+    color: rgb(168, 168, 139);
+    font-weight: lighter;
+    font-size: 1em;
+}
+
+/*pseudoelemento que permite colocar un bullet list en forma de triangulo*/
+.caja li::before {
+    content: "‣";
+    color: rgb(202, 202, 167);
+    margin: 3px;
+}
+
+/*estilos texto del contenedor*/
+.contenedor ul li a p {
+    background-color: rgba(94, 91, 73, 0.3);
 }
 
 /* Responsive layout - cuando la pantalla es menos que 800px de ancho, hacemos una sola columna */
