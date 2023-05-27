@@ -2,104 +2,104 @@
 
 /*Fuentes */
 @font-face {
-    font-family: Buffon-Bold;
-    src: url('Fuentes/Buffon-Bold.otf');
+  font-family: Buffon-Bold;
+  src: url('Fuentes/Buffon-Bold.otf');
 }
 
 @font-face {
-    font-family: Buffon-Regular;
-    src: url('Fuentes/Buffon-Regular.otf');
+  font-family: Buffon-Regular;
+  src: url('Fuentes/Buffon-Regular.otf');
 }
 
 @font-face {
-    font-family: Buffon-Thin;
-    src: url('Fuentes/Buffon-Thin.otf');
+  font-family: Buffon-Thin;
+  src: url('Fuentes/Buffon-Thin.otf');
 }
 
 
 /*Padding y margin en cero para evitar problemas con el navegador*/
 /*box-sizing para indicar como vamos a calcular la altuta y anchura de los elementos*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: #333;
+  overflow: hidden;
+  background-color: #333;
 }
 
 /* Estilo de los links de la barra superior*/
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 a:link {
-    /*estilo enlaces*/
-    text-decoration: none;
-    /*quitar subrayado*/
+  /*estilo enlaces*/
+  text-decoration: none;
+  /*quitar subrayado*/
 }
 
 /*Estilo del body */
 body {
-    font-family: Buffon-Regular;
-    padding: 10px;
-    color: #000000;
-    /*color backgroun con gradiente*/
-    background: linear-gradient(45deg, #dbd8d8, #3d4735);
+  font-family: Buffon-Regular;
+  padding: 10px;
+  color: #000000;
+  /*color backgroun con gradiente*/
+  background: linear-gradient(45deg, #545f2b, #6e6b38);
 
 }
 
 /*Estilo de los titulos */
 h1 {
-    font-family: Buffon-Bold;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: bold;
-    color: #bbff00;
-    text-align: center;
-    min-width: 200px;
-    max-width: 840px;
+  font-family: Buffon-Bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  color: #bbff00;
+  text-align: center;
+  min-width: 200px;
+  max-width: 840px;
 }
 
 /*Estilo de los subtitulos */
 h2 {
-    font-family: Buffon-Bold;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: bold;
-    padding-top: 30px;
-    color: #bbff00;
-    text-align: center;
+  font-family: Buffon-Bold;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 30px;
+  color: #bbff00;
+  text-align: center;
 
 }
 
 /*Estilo para los pie de imagen */
 h5 {
-    font-family: Buffon-Thin;
-    font-size: 12px;
-    font-style: normal;
-    color: #000000;
-    text-align: center;
+  font-family: Buffon-Thin;
+  font-size: 12px;
+  font-style: normal;
+  color: #000000;
+  text-align: center;
 
 }
 
 /* Encabezado */
 .header {
-    padding: 30px;
-    text-align: center;
-    background: #000000;
+  padding: 30px;
+  text-align: center;
+  background: #000000;
 }
 
 /* Titulo del encabezado */
 .header h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 
@@ -107,391 +107,361 @@ h5 {
 /* Dos columnas flotan una junto a la otra */
 /* Columna Izquierda */
 .leftcolumn {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 /* Columna derecha*/
 .rightcolumn {
-    float: right;
-    width: 50%;
+  float: right;
+  width: 50%;
 
 }
 
 /* Clear floats despues de las columnas */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*Estilo del texto*/
 .text {
-    font-family: Buffon-Thin;
-    font-size: 24px;
-    font-style: justify;
-    text-align: center;
-    color: #000000;
-    margin: auto;
-    min-width: 200px;
-    max-width: 560px;
+  font-family: Buffon-Thin;
+  font-size: 24px;
+  font-style: justify;
+  text-align: center;
+  color: #000000;
+  margin: auto;
+  min-width: 200px;
+  max-width: 560px;
 }
 
 /* Estilo de las imagenes */
 .image {
-    background-color: #aaa;
-    width: 100%;
+  background-color: #aaa;
+  width: 100%;
 
 }
 
 /* Separar cada imagen con su informacion para mejor organizacion */
 .card {
-    background-color: rgb(148, 150, 44);
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    min-width: 300px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*
-.mapaLeticia {
-    background-color: rgb(148, 150, 44);
-    display: block;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    min-width: 1200px;
-    max-width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.mapa {
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: rgb(122, 124, 4);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mapaFrontera{
-  position:relative;
-	z-index:2;
-	width:2%;
-	bottom:28%;
-	left:51.2%;
-}
-.mapaUN{
-  position:absolute;
-	z-index:2;
-	width:2%;
-	bottom:68.3%;
-	left:47.2%;
-}
-.mapaParque{
-  position:absolute;
-	z-index:2;
-	width:2%;
-	bottom:28%;
-	left:41.2%;
-}
-.mapaPeru{
-  position:absolute;
-	z-index:2;
-	width:2%;
-	bottom:28%;
-	left:31.2%;
-}
-*/
 .mapa_UN {
-	position:relative; 
-	font-size:1.15em;
-	color:#000000;
-  background-color: rgb(148, 150, 44);
-	border: 3px solid #AAAAAA;
-	box-shadow:2px 2px 5px black;
-	width: 80%;
-	padding: 1%;
-	margin:auto;
-  margin-bottom:15px;
-	display:block;
+  position: relative;
+  font-size: 1.15em;
+  background-color: rgb(124, 126, 37);
+  border: 3px solid #AAAAAA;
+  box-shadow: 2px 2px 5px black;
+  width: 80%;
+  padding: 1%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  display: block;
 }
+
 .mapa {
-	width: 98%;
-	display: block;
-	margin: auto;
+  width: 98%;
+  display: block;
+  margin: auto;
 }
 
 /*Estilos para cada uno de los puntos en el mapa interactivo*/
-.mapaFrontera{
-	position:absolute;
-	z-index:2;
-	width:4%;
-	bottom:44.7%;
-	left:52%;
+.mapaFrontera {
+  position: absolute;
+  z-index: 2;
+  width: 4%;
+  bottom: 44.7%;
+  left: 52%;
 }
-.mapaUN{
-	position:absolute;
-	z-index:2;
-	width:4%;
-	bottom:92.3%;
-	left:45.4%;
+
+.mapaUN {
+  position: absolute;
+  z-index: 2;
+  width: 4%;
+  bottom: 92.3%;
+  left: 45.4%;
 }
-.mapaParque{
-	position:absolute;
-	z-index:2;
-	width:4%;
-	bottom:56.7%;
-	left:41.9%;
+
+.mapaParque {
+  position: absolute;
+  z-index: 2;
+  width: 4%;
+  bottom: 56.7%;
+  left: 41.9%;
 }
-.mapaPeru{
-	position:absolute;
-	z-index:2;
-	width:4%;
-	bottom:36%;
-	left:23%;
+
+.mapaPeru {
+  position: absolute;
+  z-index: 2;
+  width: 4%;
+  bottom: 36%;
+  left: 23%;
 }
-.mapaBrasil{
-	position:absolute;
-	z-index:2;
-	width:4%;
-	bottom:22%;
-	left:54.4%;
+
+.mapaBrasil {
+  position: absolute;
+  z-index: 2;
+  width: 4%;
+  bottom: 22%;
+  left: 54.4%;
 }
-.mapalet{
-	position:absolute;
-	z-index:2;
-	width:4%;
-	bottom:82%;
-	left:38.2%;
+
+.mapalet {
+  position: absolute;
+  z-index: 2;
+  width: 4%;
+  bottom: 82%;
+  left: 38.2%;
 }
-.mapario{
-	position:absolute;
-	z-index:2;
-	width:4%;
-	bottom:28%;
-	left:34.4%;
+
+.mapario {
+  position: absolute;
+  z-index: 2;
+  width: 4%;
+  bottom: 28%;
+  left: 34.4%;
 }
+
+.imgM {
+  max-width: 30%;
+  float: right;
+  margin: 1%;
+  border: 1px solid #FFFFFF;
+  box-shadow: 1px 1px 4px black;
+}
+
 /*estilos lista*/
 li a {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    color: rgb(38, 36, 30);
-    font-weight: 600;
-    list-style-type: circle;
-    /*estilo de lista*/
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: rgb(38, 36, 30);
+  font-weight: 600;
+  list-style-type: circle;
+  /*estilo de lista*/
 }
 
 li a:visited {
-    text-decoration: none;
-    color: rgb(94, 91, 73);
-    font-weight: 200;
-    /*grosor de la tipografia*/
+  text-decoration: none;
+  color: rgb(94, 91, 73);
+  font-weight: 200;
+  /*grosor de la tipografia*/
 }
 
 /*estilos enlace*/
 .enlace {
-    /*enlace en estado normal*/
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(246, 246, 202);
-    font-weight: 600;
-    /*grosor de la letra*/
-    -o-text-stroke: 0.1px rgb(104, 96, 59);
-    /*borde de la letra - opera*/
-    -ms-text-stroke: 0.1px rgb(60, 58, 48);
-    /*borde de la letra - microsoft edge*/
-    -moz-text-stroke: 0.1px rgb(129, 121, 79);
-    /*borde de la letra - mozilla*/
-    -webkit-text-stroke: 0.1px rgb(60, 58, 48);
-    /*borde de la letra - google*/
-    text-shadow: 1px 1px 1px rgb(155, 146, 102);
-    /*sombra en los bordes de la letra*/
+  /*enlace en estado normal*/
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(246, 246, 202);
+  font-weight: 600;
+  /*grosor de la letra*/
+  -o-text-stroke: 0.1px rgb(104, 96, 59);
+  /*borde de la letra - opera*/
+  -ms-text-stroke: 0.1px rgb(60, 58, 48);
+  /*borde de la letra - microsoft edge*/
+  -moz-text-stroke: 0.1px rgb(129, 121, 79);
+  /*borde de la letra - mozilla*/
+  -webkit-text-stroke: 0.1px rgb(60, 58, 48);
+  /*borde de la letra - google*/
+  text-shadow: 1px 1px 1px rgb(155, 146, 102);
+  /*sombra en los bordes de la letra*/
 }
 
 .enlace:visited {
-    /*estilo enlace visitado*/
-    text-decoration: none;
-    /*sin subrayado*/
-    color: rgb(113, 111, 95);
-    font-weight: 200;
-    text-shadow: 1px 1px 1px rgb(199, 191, 161);
-    /*sombra en los bordes de la letra*/
+  /*estilo enlace visitado*/
+  text-decoration: none;
+  /*sin subrayado*/
+  color: rgb(113, 111, 95);
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(199, 191, 161);
+  /*sombra en los bordes de la letra*/
 }
 
 a:hover {
-    /*estilo cuando se pasa el cursor sobre el enlace*/
-    text-decoration: none;
+  /*estilo cuando se pasa el cursor sobre el enlace*/
+  text-decoration: none;
 }
 
 .tabla {
-    display: none;
+  display: none;
 }
 
 .tabla_responsive {
-    display: block;
+  display: block;
 }
 
 /*ocultar tabla no responsive en vista de menos de 800px*/
 .tabla {
-    display: none;
+  display: none;
 }
 
 /*mostrar tabla  responsive en vista de menos de 800px*/
 .tabla_responsive {
-    display: block;
+  display: block;
 }
 
 /*estilos letra mapa del sitio*/
 p {
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    color: black;
-    font-weight: 600;
-    /*grosor de la letra*/
-    padding: 15px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  /*grosor de la letra*/
+  padding: 15px;
 }
 
 /*estilos letra general del sitio*/
 .p2 {
-    margin: 20px auto;
-    background-color: rgba(129, 125, 101, 0.3);
-    border-radius: 4px;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 26px;
-    /*tamanho de fuente*/
-    font-weight: 500;
-    width: 80%;
-    /*max width width: 100%;*/
-    padding: 25px 40px;
+  margin: 20px auto;
+  background-color: rgba(129, 125, 101, 0.3);
+  border-radius: 4px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 26px;
+  /*tamanho de fuente*/
+  font-weight: 500;
+  width: 80%;
+  /*max width width: 100%;*/
+  padding: 25px 40px;
 }
 
 /*estilos para textos, enlaces y titulos seleccionados con el cursor*/
 p::selection {
-    background-color: rgb(175, 175, 125);
-    color: white;
+  background-color: rgb(97, 97, 61);
+  color: white;
 }
 
 a::selection {
-    background-color: rgb(136, 136, 70);
-    color: white;
+  background-color: rgb(95, 95, 48);
+  color: white;
 }
 
 h1::selection {
-    background-color: rgb(123, 123, 102);
-    color: white;
+  background-color: rgb(123, 123, 102);
+  color: white;
 }
 
 h2::selection {
-    background-color: rgb(124, 124, 77);
-    color: white;
+  background-color: rgb(124, 124, 77);
+  color: white;
 }
 
 h4::selection {
-    background-color: rgb(123, 123, 102);
-    color: white;
+  background-color: rgb(123, 123, 102);
+  color: white;
 }
 
 /*mapa del sitio*/
 /*estilos contenedor del mapa del sitio*/
 .contenedor_mapa {
-    display: block;
-    margin: 20px auto;
-    width: 100%;
-    background-color: rgba(94, 91, 73, 0.3);
-    border-radius: 20px;
-    padding: 20px 0px;
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  background-color: rgba(82, 78, 57, 0.3);
+  border-radius: 20px;
+  padding: 20px 0px;
 }
 
 /*estilos contenedor encabezado del mapa del sitio*/
 .encabezado {
-    display: flex;
-    flex-flow: row nowrap;
-    /*ubicación horizontal*/
-    justify-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  /*ubicación horizontal*/
+  justify-content: center;
 }
 
 /*estilos texto del encabezado del mapa del sitio*/
 .caja_encabezado p {
-    background-color: rgba(54, 52, 42, 0.7);
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    font-family: Impact, Haette nschweiler, "Arial Narrow Bold", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-    font-size: 1.9em;
-    text-align: center;
+  background-color: rgba(54, 52, 42, 0.7);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-family: Impact, Haette nschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 1.9em;
+  text-align: center;
 }
 
 /*estilos contenedor de la sección de páginas del mapa del sitio*/
 .paginas {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    /*espacio entre las cajas que representan las paginas del sitio*/
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  /*espacio entre las cajas que representan las paginas del sitio*/
 }
 
 /*estilos de cada una de las cajas que representan las paginas del sitio*/
 .caja {
-    width: auto;
-    padding: 3px;
+  width: auto;
+  padding: 3px;
 }
 
 /*estilos del texto de cada una de las cajas que representan las paginas del sitio*/
 .caja p {
-    text-align: center;
-    background-color: rgba(94, 91, 73, 0.7);
-    padding: 10px 20px;
-    border: 1px solid black;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-    font-size: 1.5em;
+  text-align: center;
+  background-color: rgba(94, 91, 73, 0.7);
+  padding: 10px 20px;
+  border: 1px solid black;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 1.5em;
 }
 
 /*estilos de las subsecciones de cada una de las paginas del mapa del sitio*/
 .caja li {
-    background-color: rgba(63, 61, 49, 0.7);
-    padding: 10px 20px;
-    border: 1px solid rgb(63, 61, 49);
-    /*borde de las subsecciones */
-    list-style: none;
-    /*remueve los bullet list de las subsecciones*/
+  background-color: rgba(63, 61, 49, 0.7);
+  padding: 10px 20px;
+  border: 1px solid rgb(63, 61, 49);
+  /*borde de las subsecciones */
+  list-style: none;
+  /*remueve los bullet list de las subsecciones*/
 }
 
 /*estilos de los enlaces del mapa del sitio*/
 .caja li a {
-    color: rgb(202, 202, 167);
-    font-weight: lighter;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+  color: rgb(202, 202, 167);
+  font-weight: lighter;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*estilos de los enlaces ya visitados del mapa del sitio*/
 .caja li a:visited {
-    color: rgb(223, 223, 213);
-    font-weight: lighter;
-    font-size: 1em;
+  color: rgb(223, 223, 213);
+  font-weight: lighter;
+  font-size: 1em;
 }
 
 /*pseudoelemento que permite colocar un bullet list en forma de triangulo*/
 .caja li::before {
-    content: "‣";
-    color: rgb(252, 252, 215);
-    margin: 3px;
+  content: "‣";
+  color: rgb(252, 252, 215);
+  margin: 3px;
 }
 
 /*estilos texto del contenedor*/
 .contenedor ul li a p {
-    background-color: rgba(94, 91, 73, 0.3);
+  background-color: rgba(94, 91, 73, 0.3);
 }
 
 /*para dispositivos de menos de 800px*/
 @media only screen and (max-width: 800px) {
+
   /*la tipografia se hace mas delgada*/
   p {
     line-height: 1.5em;
@@ -499,49 +469,64 @@ h4::selection {
   }
 
   header label {
-    display: block; /* se muestra el checkbox cuando cambia el tamaño de la pantalla*/
+    display: block;
+    /* se muestra el checkbox cuando cambia el tamaño de la pantalla*/
   }
+
   /*----estilos contenedor de información*/
   .contenedor {
-    width: 100%; /*ancho del contenedor*/
+    width: 100%;
+    /*ancho del contenedor*/
     margin-left: 0px;
   }
+
   .contenedor ul li a p {
     text-align: justify;
-    word-wrap: break-word; /*ajusta las cadenas de texto al tamaño del contenedor*/
+    word-wrap: break-word;
+    /*ajusta las cadenas de texto al tamaño del contenedor*/
     background-color: rgba(45, 43, 36, 0.7);
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(202, 202, 167);
   }
+
   /*contenedor para texto e imagenes queda en una sola columna*/
   .columnas {
-    display: flex; /*contenedor flexible con flexbox*/
-    flex-flow: column wrap; /*disposición del contenido en columnas, que se acomodan al cambiar el tamaño del dispositivo*/
+    display: flex;
+    /*contenedor flexible con flexbox*/
+    flex-flow: column wrap;
+    /*disposición del contenido en columnas, que se acomodan al cambiar el tamaño del dispositivo*/
   }
+
   /*columna para las imagenes ocupa el 100% del tamaño del dispositivo*/
   .image {
     width: 100%;
   }
+
   /*estilo enlaces del mapa de sitio*/
   ul li a {
     width: 50%;
   }
+
   /*color de fuente para texto de referencias de imagenes*/
   .fuente a {
     color: rgb(241, 241, 205);
   }
+
   /*color de fuente para enlaces dentro de textos*/
   .enlace {
     color: rgb(246, 246, 202);
   }
+
   /*ocultar tabla no responsive en vista de menos de 800px*/
   .tabla {
     display: none;
   }
+
   /*mostrar tabla  responsive en vista de menos de 800px*/
   .tabla_responsive {
     display: block;
   }
+
   td img {
     width: 300px;
     display: block;
@@ -557,11 +542,14 @@ h4::selection {
     border-radius: 20px;
     padding: 20px 0px;
   }
+
   .encabezado {
     display: flex;
-    flex-flow: column wrap; /*encabezado en columna*/
+    flex-flow: column wrap;
+    /*encabezado en columna*/
     justify-content: center;
   }
+
   .caja_encabezado p {
     background-color: rgba(54, 52, 42, 0.7);
     padding: 10px 20px;
@@ -576,23 +564,27 @@ h4::selection {
   /*estilos de la sección para las paginas - mapa del sitio*/
   .paginas {
     display: flex;
-    flex-flow: column wrap; /*las cajas que representan las paginas se mostraran alineadas en columna*/
+    flex-flow: column wrap;
+    /*las cajas que representan las paginas se mostraran alineadas en columna*/
     justify-content: space-between;
   }
+
   .caja {
     width: auto;
     padding: 3px;
   }
+
   .caja p {
     text-align: center;
     background-color: rgba(94, 91, 73, 0.7);
     padding: 10px 20px;
-    border: 1px solid black; 
+    border: 1px solid black;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     color: rgb(202, 202, 167);
     font-weight: 300;
     font-size: 1.5em;
   }
+
   .caja li {
     background-color: rgba(63, 61, 49, 0.7);
     padding: 10px 20px;
@@ -603,6 +595,7 @@ h4::selection {
     font-size: 1em;
     list-style: none;
   }
+
   .caja li::before {
     content: "‣";
     color: rgb(202, 202, 167);
@@ -616,38 +609,50 @@ h4::selection {
     /*al llegar a mas de 800px y menos de 1200px, el fondo tiene determinada imagen*/
     padding-left: 0px;
   }
+
   .contenedor {
-    width: 80%; /*ancho del contenedor*/
+    width: 80%;
+    /*ancho del contenedor*/
     display: block;
     margin: auto;
   }
+
   /*tamaño de la columna para las imagenes*/
   .image {
     width: 50%;
     text-align: center;
   }
 }
+
 /*media query para dispositivos de mas de 1200px*/
 @media only screen and (min-width: 1200px) {
+
   /*Al llegar a las de 1200px el fondo cambia de imagen*/
   body {
     padding-left: 0px;
   }
+
   /*estilos contenedor de información*/
   .contenedor {
-    width: 80%; /*ancho del contenedor*/
+    width: 80%;
+    /*ancho del contenedor*/
     margin-left: 10%;
     margin-right: 10%;
   }
+
   /*división del contenedor en dos columnas, una para imagenes y otra para texto*/
   .columnas {
-    display: flex; /*contenedor flexible con flexbox*/
-    flex-flow: row wrap; /*disposición del contenido en filas, que se acomodan al cambiar el tamaño del dispositivo*/
+    display: flex;
+    /*contenedor flexible con flexbox*/
+    flex-flow: row wrap;
+    /*disposición del contenido en filas, que se acomodan al cambiar el tamaño del dispositivo*/
   }
+
   /*tamaño de la columna para el texto*/
   .texto {
     width: 40%;
   }
+
   /*tamaño de la columna para las imagenes*/
   .image {
     width: 50%;
